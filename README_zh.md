@@ -4,7 +4,7 @@
 
 KubeSphere 基于 Jenkins 提供的 DevOps 系统可以实现[多种功能](https://kubesphere.io/zh/docs/devops-user-guide/understand-and-manage-devops-projects/overview/#功能)。本仓库用来演示基于 SpringBoot 的 KubeSphere DevOps 功能。例如，您可以在根目录中找到 `Jenkinsfile-online` 文件，并将该文件用作 **SCM 中的 Jenkinsfile** 来创建流水线。
 
-有关如何使用 KubeSphere DevOps 系统的更多信息，您可以参考下方的 KubeSphere 官方文档清单。
+有关如何使用 KubeSphere  DevOps 系统的更多信息，您可以参考下方的 KubeSphere 官方文档清单。
 
 ## 文档清单
 
