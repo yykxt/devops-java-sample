@@ -1,0 +1,21 @@
+defaultNamespace: java-app-namespace
+
+targetCustomizations:
+- name: staging
+  clusterGroup: staging-clusters
+  kustomize:
+    dir: environments/staging/java-app
+  helm:
+    values:
+      replicaCount: 2
+
+- name: production
+  clusterGroup: production-clusters
+  kustomize:
+    dir: environments/production/java-app
+  helm:
+    values:
+      replicaCount: 3
+  # 生产环境启用手动审批
+  deployAfter:
+    manualApproval: true
